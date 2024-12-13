@@ -50,13 +50,13 @@ fun BookSearchBar(
                 color = DesertWhite
             )
                 .minimumInteractiveComponentSize(),
-            value = "",
+            value = searchQuery,
             shape = RoundedCornerShape(100),
             colors = OutlinedTextFieldDefaults.colors(
                 cursorColor = DarkBlue,
                 focusedBorderColor = SandYellow
             ),
-            onValueChange = {},
+            onValueChange = onSearchQueryChange,
             placeholder = {
                 Text(text = stringResource(Res.string.search_hint))
             },

@@ -58,7 +58,9 @@ fun BookListItem(
         Row(
             modifier = Modifier.padding(16.dp)
                 .fillMaxWidth()
-                .height(IntrinsicSize.Min)
+                .height(IntrinsicSize.Min),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
         ) {
             Box(
                 modifier = Modifier.height(100.dp),
@@ -83,7 +85,9 @@ fun BookListItem(
                     }
                 )
                 when (val result = imageLoadResult) {
-                    null -> CircularProgressIndicator()
+                    null -> {
+                        CircularProgressIndicator()
+                    }
                     else -> {
                         Image(
                             painter = if (result.isSuccess) painter else painterResource(Res.drawable.book_error_2),

@@ -2,4 +2,24 @@
 <resources>
     <string name="search_hint">Search</string>
     <string name="close_hint">Close Hint</string>
+    <string name="search_result">Search Result</string>
+    <string name="favourites">Favourites</string>
+    <string name="no_search_results">Oops, there aren't any books for your search query</string>
+    <string name="no_favorite_book">You haven't saved any favourite books yet.</string>
+    <string name="disk_full">Storage is full</string>
+    <string name="unknown_error">Something went wrong</string>
+    <string name="request_timeout">Request timed out</string>
+    <string name="too_many_request">Too many requests</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="server_error">Server error</string>
+    <string name="serialization_error">Serialization error</string>
+    <string name="book_cover">book_cover</string>
+    <string name="rating">Rating</string>
+    <string name="pages">Pages</string>
+    <string name="languages">Languages</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="go_back">Go back</string>
+    <string name="mark_as_favorite">Mark as favorite</string>
+    <string name="remove_from_favorites">Remove from favorites</string>
+    <string name="description_unavailable">Description not available.</string>
 </resources>
