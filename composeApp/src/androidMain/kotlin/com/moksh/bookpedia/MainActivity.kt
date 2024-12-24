@@ -7,11 +7,13 @@ import com.moksh.bookpedia.app.App
 import android.content.Intent
 import android.net.Uri
 import androidx.activity.enableEdgeToEdge
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+        installSplashScreen()
         enableEdgeToEdge()
+        super.onCreate(savedInstanceState)
         setContent {
             App()
         }
