@@ -214,7 +214,7 @@ fun BookListScreenView(
                                     )
                                 } else {
                                     BookList(
-                                        books = state.searchResults,
+                                        books = state.favouriteBooks,
                                         onClick = {
                                             onAction(BookListAction.OnBookClick(it))
                                         },
